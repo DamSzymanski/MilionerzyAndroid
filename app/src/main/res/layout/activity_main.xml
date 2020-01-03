@@ -40,7 +40,7 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="419dp"
-        android:layout_height="245dp"
+        android:layout_height="239dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -63,6 +63,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="163dp"
+        android:onClick="showAndRandQuestion"
+        android:text="Gramy dalej"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="163dp"
+        android:onClick="RestartGame"
+        android:text="Gra od nowa"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
     <ImageView
         android:id="@+id/hubertPodczasPytania"
         android:layout_width="411dp"
@@ -77,8 +107,8 @@
 
     <ImageView
         android:id="@+id/hubertDobraOdp"
-        android:layout_width="421dp"
-        android:layout_height="201dp"
+        android:layout_width="474dp"
+        android:layout_height="206dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,15 +118,15 @@
 
     <ImageView
         android:id="@+id/hubertZlaOdp"
-        android:layout_width="409dp"
-        android:layout_height="261dp"
+        android:layout_width="500dp"
+        android:layout_height="327dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/logo"
         app:srcCompat="@drawable/bladnaodpowiez"
-        tools:visibility="invisible" />
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/trescPytania"
@@ -146,8 +176,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="398dp"
-        android:layout_height="105dp"
+        android:layout_width="414dp"
+        android:layout_height="181dp"
         android:layout_marginTop="428dp"
         android:padding="2sp"
         android:text="Komunikat"
