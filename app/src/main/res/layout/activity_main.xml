@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#174B94"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/d"
+        android:layout_width="384dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:background="#061168"
+        android:onClick="dClick"
+        android:text="D"
+        android:textColor="#FDFFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c" />
+
+    <Button
+        android:id="@+id/c"
+        android:layout_width="384dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:background="#061168"
+        android:onClick="cClick"
+        android:text="C"
+        android:textColor="#FDFFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="419dp"
+        android:layout_height="245dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="163dp"
+        android:onClick="startGame"
+        android:text="Zagraj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/hubertPodczasPytania"
+        android:layout_width="411dp"
+        android:layout_height="232dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pytaniewtrakcie"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/hubertDobraOdp"
+        android:layout_width="421dp"
+        android:layout_height="201dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dobraodpowiedz"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/hubertZlaOdp"
+        android:layout_width="409dp"
+        android:layout_height="261dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo"
+        app:srcCompat="@drawable/bladnaodpowiez"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/trescPytania"
+        android:layout_width="384dp"
+        android:layout_height="115dp"
+        android:background="#061168"
+        android:padding="2sp"
+        android:text="Pytanie"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <Button
+        android:id="@+id/A"
+        android:layout_width="384dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:background="#061168"
+        android:onClick="aClick"
+        android:text="A"
+        android:textColor="#FDFFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startGameButton" />
+
+    <Button
+        android:id="@+id/b"
+        android:layout_width="384dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:background="#061168"
+        android:onClick="bClick"
+        android:text="B"
+        android:textColor="#FDFFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/A" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="398dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="428dp"
+        android:padding="2sp"
+        android:text="Komunikat"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hubertDobraOdp"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
