@@ -7,7 +7,7 @@ import android.provider.BaseColumns;
 
 public class DbHelper  extends SQLiteOpenHelper implements BaseColumns {
 
-    // If you change the database schema, you must increment the database version.
+   //podbijać przy zmianie
     public static final int DATABASE_VERSION = 7;
     public static final String DATABASE_NAME = "Questions";
 
@@ -20,8 +20,6 @@ public class DbHelper  extends SQLiteOpenHelper implements BaseColumns {
         db.execSQL(SQL_CREATE_ENTRIES);
     }
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // This database is only a cache for online data, so its upgrade policy is
-        // to simply to discard the data and start over
         db.execSQL(SQL_DELETE_ENTRIES);
         onCreate(db);
     }
