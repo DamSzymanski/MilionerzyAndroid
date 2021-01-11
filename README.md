@@ -8,5 +8,5 @@ Data wykonania - styczeń 2020.
 * Android Studio
 ## Uruchomienie
 1. Otwarcie projektu w Android Studio
-2. Upewnienie, czy skonfigurowaliśmy emulator
+2. Wymagany jest emulator
 3. Uruchomienie projektu
