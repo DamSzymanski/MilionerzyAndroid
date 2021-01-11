@@ -1,5 +1,12 @@
-# MilionerzyAndroid-zaliczenie
+# MilionerzyAndroid
 
-
-
-Projekt zaliczeniowy na zajęcia z Adnroida styczeń 2020
+## Opis
+Projekt ten jest próbą odtworzenia słynnego teleturnieju w formie aplikacji mobilnej na systemy Android.
+Data wykonania - styczeń 2020.
+## Technologie oraz środowisko
+* Java
+* Android Studio
+## Uruchomienie
+1. Otwarcie projektu w Android Studio
+2. Upewnienie, czy skonfigurowaliśmy emulator
+3. Uruchomienie projektu
